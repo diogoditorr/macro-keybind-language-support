@@ -1,0 +1,25 @@
+{
+    "name": "macro-keybind",
+    "displayName": "Macro Keybind (Minecraft)",
+    "description": "Syntax for macros with the mod Macro Keybind (Minecraft)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "macrokeybind",
+            "aliases": ["Macro Keybind (Minecraft)", "macrokeybind"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }], 
+        "grammars": [{
+            "language": "macrokeybind",
+            "scopeName": "source.macrokeybind",
+            "path": "./syntaxes/macrokeybind.tmLanguage"
+        }]
+    }
+}
